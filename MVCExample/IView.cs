@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace MVCExample
 {
+    /// <summary> 
+    /// Clase para representar la logica de negocio
+    /// </summary>
     interface IView
     {
         void LoadData();

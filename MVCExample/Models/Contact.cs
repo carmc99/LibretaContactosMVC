@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace MVCExample.Models
 {
+    /// <summary> 
+    /// Clase para representar la logica de negocio
+    /// </summary>
     public class Contact
     {
+
         public string Name { set; get; }
         public string LastName { set; get; }
         public string Addres { set; get; }

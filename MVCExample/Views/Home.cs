@@ -14,7 +14,9 @@ namespace MVCExample.Views
             CreateHeadersListView();
             contactControl = new ContactControllers();
         }
-
+        /// <summary> 
+        /// Evento al presionar el boton agregar contacto
+        /// </summary>
         private void Btn_add_Click(object sender, EventArgs e)
         {
             if (contactControl.create(new Contact
@@ -41,6 +43,9 @@ namespace MVCExample.Views
             }
 
         }
+        /// <summary> 
+        /// Crea los encabezados del listview
+        /// </summary>
         public void CreateHeadersListView()
         {
             ColumnHeader colHead;
@@ -63,6 +68,9 @@ namespace MVCExample.Views
 
             listView_contacts.View = View.Details;
         }
+        /// <summary> 
+        /// Carga los contactos de la lista contactos al listview
+        /// </summary>
         public void LoadData()
         {
             ListViewItem lvi;
@@ -88,7 +96,9 @@ namespace MVCExample.Views
                 this.listView_contacts.Items.Add(lvi);
             }
         }
-
+        /// <summary> 
+        /// Evento al presionar el boton eliminar contacto
+        /// </summary>
         private void Btn_delete_Click(object sender, EventArgs e)
         {
             if (listView_contacts.SelectedItems.Count > 0)
@@ -120,6 +130,9 @@ namespace MVCExample.Views
                MessageBoxDefaultButton.Button1);
             }
         }
+        /// <summary> 
+        /// Limpia los campos del formulario
+        /// </summary>
         public void ClearInput()
         {
             txt_address.Text = "";

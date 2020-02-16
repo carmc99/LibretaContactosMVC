@@ -153,7 +153,7 @@ namespace MVCExample.Views
             this.Controls.Add(this.btn_add);
             this.Controls.Add(this.listView_contacts);
             this.Name = "Home";
-            this.Text = "v";
+            this.Text = "Constacts ";
             this.ResumeLayout(false);
             this.PerformLayout();
 
